@@ -77,8 +77,7 @@ PKG_DO_VARS+= UCLIBC=1
 endif
 
 define Build/Compile
-	#cd "$(PKG_BUILD_DIR)";\
-	$(INSTALL_DIR) $(PKG_BUILD_DIR)/tmp
+	cd "$(PKG_BUILD_DIR)";\
 	CROSS="true" \
 	CC="$(TARGET_CC)" \
 	AR="$(TARGET_AR)" \
@@ -89,7 +88,6 @@ define Build/Compile
 	TARGET_ARCH="$(CONFIG_ARCH)" \
 	SSP_SUPPORT="$(CONFIG_SSP_SUPPORT)" \
 	GYP_ADDITIONAL_ARGS="-f make-linux" \
-	CJDNS_BUILD_TMPDIR="$(PKG_BUILD_DIR)/tmp" \
 	$(PKG_DO_VARS) \
 	$(PKG_BUILD_DIR)/do
 endef
