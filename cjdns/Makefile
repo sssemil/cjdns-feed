@@ -77,7 +77,7 @@ PKG_DO_VARS+= UCLIBC=1
 endif
 
 define Build/Compile
-	#cd "$(PKG_BUILD_DIR)";\
+	cd "$(PKG_BUILD_DIR)";\
 	$(INSTALL_DIR) $(PKG_BUILD_DIR)/tmp
 	CROSS="true" \
 	CC="$(TARGET_CC)" \
