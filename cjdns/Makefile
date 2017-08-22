@@ -36,8 +36,8 @@ define Package/cjdns
 	CATEGORY:=Network
 	SUBMENU:=Routing and Redirection
 	TITLE:=Encrypted near-zero-conf mesh routing protocol
-	URL:=https://github.com/hyperboria/cjdns
-	MAINTAINER:=Lars Gierth <larsg@systemli.org>
+	URL:=https://github.com/cjdelisle/cjdns
+	MAINTAINER:=Caleb James DeLisle
 	DEPENDS:=@IPV6 +kmod-tun +libnl-tiny +libpthread +librt \
 		+libuci-lua +lua-bencode +dkjson +luasocket +lua-sha2
 endef
