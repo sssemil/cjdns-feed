@@ -1,0 +1,18 @@
+This is an OpenWrt package feed containing cjdns routing packages.
+
+To use these packages, add the following line to the feeds.conf
+in the OpenWrt buildroot:
+
+  src-git cjdns https://github.com/sssemil/cjdns-feed.git
+  
+Update the feed:
+
+  ./scripts/feeds update cjdns
+  
+Activate the package:
+
+  ./scripts/feeds install -a -p cjdns
+  
+The routing packages should now appear in menuconfig.
+
+
